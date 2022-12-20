@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(common.css);
+
+* { -webkit-text-size-adjust:none } 
+
+body { max-width: 768px; min-width: 360px; height: 100%; margin:0 auto; } 
+input[type="text"]::placeholder { font-weight: 400; font-size: 14px; color: #C3C6C9; } 
+
+
+.mobile-wrap {position:relative; width: 100%; height: 100%; margin:0 auto; background: #24529B; } 
+
+.mobile-wrap .modal-cont { position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); width:100%; background-color: #fff; padding: 30px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); } 
+.mobile-wrap .modal-top { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #E3E3E6; padding-bottom: 16px; } 
+.mobile-wrap .modal-body { margin:10px 0; } 
+.mobile-wrap .modal-title { font-weight: 500; font-size: 22px; color: #1B1B1E; } 
+.mobile-wrap .modal-bottom { display:flex; align-items: center; justify-content: flex-end; } 
+
+.modal-number-check .modal-cont { width:95%; max-width: 380px;} 
+.modal-number-check .modal-body .ic-phone-check { width:100%; margin:20px auto; } 
+.modal-number-check .modal-body .check-text { font-weight: 400; font-size: 16px; line-height: 20px; text-align: center;margin-bottom: 20px; } 
+.modal-number-check .modal-bottom { margin-top: 20px;} 
+.modal-number-check .modal-bottom button { width:100%; } 
+
+.modal-sign .modal-cont { width:95%; } 
+.modal-sign .modal-body .sign-pad { height:140px; display:flex;align-items: center;justify-content: center; border: 1px solid #E3E3E6; font-weight: 400; font-size: 16px;color: #363738; } 
+.modal-sign .modal-bottom { gap:10px; } 
+.modal-sign .modal-bottom button { width:100%; } 
+
+.modal-sign-agree .modal-cont { width:95%; } 
+.modal-sign-agree .modal-body .ic-sign-agree { width:100%; margin:20px auto; } 
+.modal-sign-agree .modal-body .agree-checkbox{padding:20px; border: 1px solid #E3E3E6; } 
+.modal-sign-agree .modal-body .agree-checkbox ul li{display: flex;align-items: center;gap:6px;margin-bottom: 10px;} 
+.modal-sign-agree .modal-body .agree-checkbox ul li:last-child{margin-bottom: 0;} 
+.modal-sign-agree .modal-bottom { gap:10px; } 
+.modal-sign-agree .modal-bottom button { width:100%; } 
+
+.mobile-wrap .content-wrap{width:95%;margin:0 auto;padding-top:20px;}
+.mobile-wrap .contract-box{width:100%;height:500px;background-color: white;}
+.mobile-wrap .button-wrap{position:absolute;bottom:0;left:0; width:100%;height:100px;background-color: #363738;display:flex;align-items: center;justify-content: space-between;padding:30px;gap:60px;}
+.mobile-wrap .button-wrap button{width:100%;}

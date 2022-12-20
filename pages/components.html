@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Components</title>
+  <link href="../css/style.css" rel="stylesheet" />
+</head>
+<style>
+  .common_section {
+    background-color: #eee;
+  }
+
+  .common_li {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .common_li input {
+    width: auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+</style>
+
+<body>
+  <!--요소 복사는 common_section 부분 제외 해당 요소만 복사할 것-->
+
+  <!--타이포-->
+  <section class="common_section">
+    <h1>타이포</h1>
+    <article class="common_li">
+      <p class="content-title">계약 리스트</p>
+    </article>
+  </section>
+
+  <!--버튼-->
+  <section class="common_section">
+    <h1>버튼들</h1>
+    <article class="common_li">
+      <div class="location">
+        <div><span class="ic-home"></span></div>
+        <div>전자계약</div>
+        <div>근로계약 조회</div>
+      </div>
+      <button class="btn-blue">Sign In</button>
+      <button class="btn-table-blue">업로드</button>
+      <button class="btn-table-blue" disabled>미리보기</button>
+      <button class="btn-gray">발령조회</button>
+      <button class="btn-gray"><span class="ic-refuse"></span>거절하기</button>
+      <button class="btn-prev"></button>
+      <button class="btn-next"></button>
+      <button class="btn-step-up"></button>
+      <button class="btn-step-down"></button>
+      <button class="btn-green"><span class="ic-search"></span>조회</button>
+      <button class="btn-green"><span class="ic-apply"></span>적용</button>
+      <button class="btn-green"><span class="ic-print"></span>인쇄</button>
+      <button class="btn-down"></button>
+    </article>
+  </section>
+
+  <!--아이콘들-->
+  <section class="common_section">
+    <h1>아이콘들</h1>
+    <article class="common_li">
+      <div class="main-logo"></div>
+      <span class="ic-home"></span>
+      <span class="ic-mypage"></span>
+      <span class="ic-logout"></span>
+      <div class="myinfo-wrap">
+        <div class="info-picture"></div>
+        <div class="info-name">김희선 <button class="btn-down"></button></div>
+      </div>
+    </article>
+  </section>
+
+  <!--인풋들-->
+  <section class="common_section">
+    <h1>인풋들</h1>
+    <article class="common_li">
+      <input type="text" />
+      <div class="date-wrap">
+        <input type="date" name="" id="">
+        ~
+        <input type="date" name="" id="">
+      </div>
+      <select name="" id="">
+        <option value="">전체</option>
+      </select>
+      <div class="button-select">
+        <select name="" id="">
+          <option value="">전체</option>
+        </select>
+        <button class="btn-green">조회</button>
+      </div>
+      <div class="input-step">
+        <label for="">Display</label>
+        <input type="number" name="" id="">
+        <div class="btn-step-wrap">
+          <button class="btn-step-up"></button>
+          <button class="btn-step-down"></button>
+        </div>
+      </div>
+      <input type="checkbox" name="" id="">
+      <textarea></textarea>
+    </article>
+  </section>
+
+  <!--테이블들-->
+  <section class="common_section">
+    <h1>테이블들</h1>
+    <article class="common_li">
+      <div class="table-top">
+        <p class="content-title">계약 리스트</p>
+        <div class="table-button-wrap">
+          <button class="btn-gray">발령조회</button>
+          <button class="btn-gray">엑셀받기</button>
+          <button class="btn-gray">일괄등록</button>
+          <button class="btn-gray">일괄삭제</button>
+          <button class="btn-gray">계약서다운</button>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <colgroup>
+            <col width="10" />
+            <col width="10" />
+            <col width="10" />
+            <col width="10" />
+            <col width="10" />
+            <col width="10" />
+            <col width="10" />
+            <col width="10" />
+            <col width="10" />
+            <col width="10" />
+          </colgroup>
+          <tr>
+            <th>기관명</th>
+            <th>계약유형</th>
+            <th>성명</th>
+            <th>생년월일</th>
+            <th>직군</th>
+            <th>직무 근무장소</th>
+            <th>계약 시작일</th>
+            <th>계약 종료일</th>
+            <th>진행상태</th>
+            <th>계약서</th>
+          </tr>
+          <tr>
+            <td>서울병원</td>
+            <td>일반직계약</td>
+            <td>홍길동</td>
+            <td>1990-02-30</td>
+            <td>일반직</td>
+            <td>사무직 인사노무팀</td>
+            <td>2022-11-01</td>
+            <td>2022-12-31</td>
+            <td>계약 체결완료</td>
+            <td>
+              <button class="btn-table-blue">미리보기</button>
+            </td>
+          </tr>
+          <tr>
+            <td>서울병원</td>
+            <td>일반직계약</td>
+            <td>홍길동</td>
+            <td>1990-02-30</td>
+            <td>일반직</td>
+            <td>사무직 인사노무팀</td>
+            <td>2022-11-01</td>
+            <td>2022-12-31</td>
+            <td>계약 체결완료</td>
+            <td>
+              <button class="btn-table-blue">미리보기</button>
+            </td>
+          </tr>
+          <tr>
+            <td>서울병원</td>
+            <td>일반직계약</td>
+            <td>홍길동</td>
+            <td>1990-02-30</td>
+            <td>일반직</td>
+            <td>사무직 인사노무팀</td>
+            <td>2022-11-01</td>
+            <td>2022-12-31</td>
+            <td>계약 체결완료</td>
+            <td>
+              <button class="btn-table-blue">미리보기</button>
+            </td>
+          </tr>
+        </table>
+        <div class="table-bottom-wrap">
+          <div class="page-entries">
+            Showing <span>1</span> to <span>10</span> of <span>50</span> entries
+          </div>
+          <div class="pagination-wrapper">
+            <div class="input-step">
+              <label for="">Display</label>
+              <input type="number" name="" id="">
+              <div class="btn-step-wrap">
+                <button class="btn-step-up"></button>
+                <button class="btn-step-down"></button>
+              </div>
+            </div>
+            <ul class="pagination">
+              <button class="btn-prev"></button>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <button class="btn-next"></button>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!--작은 창들 -->
+  <section class="common_section common_section02">
+    <h1>작은창들</h1>
+    <article class="common_li common_menu_li">
+      <div class="card"></div>
+
+      <ul class="profile-box">
+        <li><span class="ic-mypage"></span>마이페이지</li>
+        <li><span class="ic-logout"></span>로그아웃</li>
+      </ul>
+    </article>
+  </section>
+
+
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>근로계약관리</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-left">
+                <div class="main-logo"></div>
+                <div class="location">
+                    <div><span class="ic-home"></span></div>
+                    <div>전자계약</div>
+                    <div>근로계약 조회</div>
+                </div>
+            </div>
+            <div class="myinfo-wrap">
+                <div class="info-picture"></div>
+                <div class="info-name">김희선 <button class="btn-down"></button></div>
+                <ul class="profile-box">
+                    <li><span class="ic-mypage"></span>마이페이지</li>
+                    <li><span class="ic-logout"></span>로그아웃</li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <aside class="aside">
+                <nav class="nav">
+                    <ul class="main-menu">
+                        <li class="active"><a href="javascript:;"><span class="ic-menu01"></span>근로 계약관리</a></li>
+                        <li><a href="signature_request.html"><span class="ic-menu02"></span>서명 날인요청</a></li>
+                        <li><a href="signature_waiting.html"><span class="ic-menu03"></span>서명 진행대기</a></li>
+                        <li><a href="contract_expiring.html"><span class="ic-menu04"></span>계약 만료예정</a></li>
+                        <li><a href="contract_cancel.html"><span class="ic-menu05"></span>계약 체결취소</a></li>
+                        <li><a href="work_history.html"><span class="ic-menu06"></span>작업 히스토리</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="main">
+                <section class="card">
+                    <p class="content-title">계약 검색</p>
+                    <div class="setting-table">
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">기관</label>
+                                <select name="" id="">
+                                    <option value="">서울병원</option>
+                                </select>
+                            </div>
+                            <div class="row-cont">
+                                <label for="">등록일자</label>
+                                <div class="date-wrap">
+                                    <input type="date" name="" id="">
+                                    ~
+                                    <input type="date" name="" id="">
+                                </div>
+                            </div>
+                            <div class="row-cont">
+                                <label for="">계약유형</label>
+                                <select name="" id="">
+                                    <option value="">계약체결완료</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">직군</label>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </div>
+                            <div class="row-cont">
+                                <label for="">직무</label>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </div>
+                            <div class="row-cont">
+                                <label for="">근무장소</label>
+                                <div class="button-select">
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                    </select>
+                                    <button class="btn-green place-search">찾기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">사번</label>
+                                <input type="text" name="" id="" placeholder="입력">
+                            </div>
+                            <div class="row-cont">
+                                <label for="">성명</label>
+                                <input type="text" name="" id="" placeholder="입력">
+                            </div>
+                            <div class="row-cont">
+                                <label for="">진행상태</label>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">관리번호</label>
+                                <input type="text" name="" id="" placeholder="입력">
+                            </div>
+                            <div class="row-cont">
+                                <label for="">진행상태</label>
+                                <input type="text" name="" id="" value="계약중">
+                            </div>
+                            <div class="row-cont flex-end">
+                                <button class="btn-green"><span class="ic-search"></span>조회</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="table-wrap">
+                        <div class="table-top">
+                            <p class="content-title">계약 리스트</p>
+                            <div class="table-button-wrap">
+                                <button class="btn-gray btn-lookup">발령조회</button>
+                                <button class="btn-gray">엑셀받기</button>
+                                <button class="btn-gray">일괄등록</button>
+                                <button class="btn-gray">일괄삭제</button>
+                                <button class="btn-gray">계약서다운</button>
+                            </div>
+                        </div>
+                        <div class="table-wrapper">
+                            <table>
+                                <colgroup>
+
+                                </colgroup>
+                                <tr>
+                                    <th>기관명</th>
+                                    <th>계약유형</th>
+                                    <th>성명</th>
+                                    <th>생년월일</th>
+                                    <th>직군</th>
+                                    <th>직무 근무장소</th>
+                                    <th>계약 시작일</th>
+                                    <th>계약 종료일</th>
+                                    <th>진행상태</th>
+                                    <th>계약서</th>
+                                    <th>직군</th>
+                                    <th>직무</th>
+                                    <th>근무장소</th>
+                                    <th>전화번호</th>
+                                    <th>이메일</th>
+                                    <th>서명완료일</th>
+                                </tr>
+                                <tr>
+                                    <td>서울병원</td>
+                                    <td>일반직계약</td>
+                                    <td>홍길동</td>
+                                    <td>1990-02-30</td>
+                                    <td>일반직</td>
+                                    <td>사무직 인사노무팀</td>
+                                    <td>2022-11-01</td>
+                                    <td>2022-12-31</td>
+                                    <td>계약 체결완료</td>
+                                    <td>
+                                        <div class="table-button-wrap">
+                                            <button class="btn-table-blue preview">미리보기</button>
+                                            <button class="btn-table-blue">업로드</button>
+                                        </div>
+                                    </td>
+                                    <td>직군1</td>
+                                    <td>직무1</td>
+                                    <td>서울병원</td>
+                                    <td>010-123-1234</td>
+                                    <td>test@test.com</td>
+                                    <td>2022-08-01</td>
+                                </tr>
+                                <tr>
+                                    <td>서울병원</td>
+                                    <td>일반직계약</td>
+                                    <td>홍길동</td>
+                                    <td>1990-02-30</td>
+                                    <td>일반직</td>
+                                    <td>사무직 인사노무팀</td>
+                                    <td>2022-11-01</td>
+                                    <td>2022-12-31</td>
+                                    <td>계약 체결완료</td>
+                                    <td>
+                                        <div class="table-button-wrap">
+                                            <button class="btn-table-blue" disabled>미리보기</button>
+                                            <button class="btn-table-blue">업로드</button>
+                                        </div>
+                                    </td>
+                                    <td>직군1</td>
+                                    <td>직무1</td>
+                                    <td>서울병원</td>
+                                    <td>010-123-1234</td>
+                                    <td>test@test.com</td>
+                                    <td>2022-08-01</td>
+                                </tr>
+                                <tr>
+                                    <td>서울병원</td>
+                                    <td>일반직계약</td>
+                                    <td>홍길동</td>
+                                    <td>1990-02-30</td>
+                                    <td>일반직</td>
+                                    <td>사무직 인사노무팀</td>
+                                    <td>2022-11-01</td>
+                                    <td>2022-12-31</td>
+                                    <td>계약 체결완료</td>
+                                    <td>
+                                        <div class="table-button-wrap">
+                                            <button class="btn-table-blue preview">미리보기</button>
+                                            <button class="btn-table-blue" disabled>업로드</button>
+                                        </div>
+                                    </td>
+                                    <td>직군1</td>
+                                    <td>직무1</td>
+                                    <td>서울병원</td>
+                                    <td>010-123-1234</td>
+                                    <td>test@test.com</td>
+                                    <td>2022-08-01</td>
+                                </tr>
+                                <tr>
+                                    <td>서울병원</td>
+                                    <td>일반직계약</td>
+                                    <td>홍길동</td>
+                                    <td>1990-02-30</td>
+                                    <td>일반직</td>
+                                    <td>사무직 인사노무팀</td>
+                                    <td>2022-11-01</td>
+                                    <td>2022-12-31</td>
+                                    <td>계약 체결완료</td>
+                                    <td>
+                                        <div class="table-button-wrap">
+                                            <button class="btn-table-blue preview">미리보기</button>
+                                            <button class="btn-table-blue">업로드</button>
+                                        </div>
+                                    </td>
+                                    <td>직군1</td>
+                                    <td>직무1</td>
+                                    <td>서울병원</td>
+                                    <td>010-123-1234</td>
+                                    <td>test@test.com</td>
+                                    <td>2022-08-01</td>
+                                </tr>
+                                <tr>
+                                    <td>서울병원</td>
+                                    <td>일반직계약</td>
+                                    <td>홍길동</td>
+                                    <td>1990-02-30</td>
+                                    <td>일반직</td>
+                                    <td>사무직 인사노무팀</td>
+                                    <td>2022-11-01</td>
+                                    <td>2022-12-31</td>
+                                    <td>계약 체결완료</td>
+                                    <td>
+                                        <div class="table-button-wrap">
+                                            <button class="btn-table-blue preview">미리보기</button>
+                                            <button class="btn-table-blue">업로드</button>
+                                        </div>
+                                    </td>
+                                    <td>직군1</td>
+                                    <td>직무1</td>
+                                    <td>서울병원</td>
+                                    <td>010-123-1234</td>
+                                    <td>test@test.com</td>
+                                    <td>2022-08-01</td>
+                                </tr>
+                                <tr>
+                                    <td>서울병원</td>
+                                    <td>일반직계약</td>
+                                    <td>홍길동</td>
+                                    <td>1990-02-30</td>
+                                    <td>일반직</td>
+                                    <td>사무직 인사노무팀</td>
+                                    <td>2022-11-01</td>
+                                    <td>2022-12-31</td>
+                                    <td>계약 체결완료</td>
+                                    <td>
+                                        <div class="table-button-wrap">
+                                            <button class="btn-table-blue preview">미리보기</button>
+                                            <button class="btn-table-blue">업로드</button>
+                                        </div>
+                                    </td>
+                                    <td>직군1</td>
+                                    <td>직무1</td>
+                                    <td>서울병원</td>
+                                    <td>010-123-1234</td>
+                                    <td>test@test.com</td>
+                                    <td>2022-08-01</td>
+                                </tr>
+                                <tr>
+                                    <td>서울병원</td>
+                                    <td>일반직계약</td>
+                                    <td>홍길동</td>
+                                    <td>1990-02-30</td>
+                                    <td>일반직</td>
+                                    <td>사무직 인사노무팀</td>
+                                    <td>2022-11-01</td>
+                                    <td>2022-12-31</td>
+                                    <td>계약 체결완료</td>
+                                    <td>
+                                        <div class="table-button-wrap">
+                                            <button class="btn-table-blue preview">미리보기</button>
+                                            <button class="btn-table-blue">업로드</button>
+                                        </div>
+                                    </td>
+                                    <td>직군1</td>
+                                    <td>직무1</td>
+                                    <td>서울병원</td>
+                                    <td>010-123-1234</td>
+                                    <td>test@test.com</td>
+                                    <td>2022-08-01</td>
+                                </tr>
+                                <tr>
+                                    <td>서울병원</td>
+                                    <td>일반직계약</td>
+                                    <td>홍길동</td>
+                                    <td>1990-02-30</td>
+                                    <td>일반직</td>
+                                    <td>사무직 인사노무팀</td>
+                                    <td>2022-11-01</td>
+                                    <td>2022-12-31</td>
+                                    <td>계약 체결완료</td>
+                                    <td>
+                                        <div class="table-button-wrap">
+                                            <button class="btn-table-blue preview">미리보기</button>
+                                            <button class="btn-table-blue">업로드</button>
+                                        </div>
+                                    </td>
+                                    <td>직군1</td>
+                                    <td>직무1</td>
+                                    <td>서울병원</td>
+                                    <td>010-123-1234</td>
+                                    <td>test@test.com</td>
+                                    <td>2022-08-01</td>
+                                </tr>
+                                <tr>
+                                    <td>서울병원</td>
+                                    <td>일반직계약</td>
+                                    <td>홍길동</td>
+                                    <td>1990-02-30</td>
+                                    <td>일반직</td>
+                                    <td>사무직 인사노무팀</td>
+                                    <td>2022-11-01</td>
+                                    <td>2022-12-31</td>
+                                    <td>계약 체결완료</td>
+                                    <td>
+                                        <div class="table-button-wrap">
+                                            <button class="btn-table-blue preview">미리보기</button>
+                                            <button class="btn-table-blue">업로드</button>
+                                        </div>
+                                    </td>
+                                    <td>직군1</td>
+                                    <td>직무1</td>
+                                    <td>서울병원</td>
+                                    <td>010-123-1234</td>
+                                    <td>test@test.com</td>
+                                    <td>2022-08-01</td>
+                                </tr>
+                                <tr>
+                                    <td>서울병원</td>
+                                    <td>일반직계약</td>
+                                    <td>홍길동</td>
+                                    <td>1990-02-30</td>
+                                    <td>일반직</td>
+                                    <td>사무직 인사노무팀</td>
+                                    <td>2022-11-01</td>
+                                    <td>2022-12-31</td>
+                                    <td>계약 체결완료</td>
+                                    <td>
+                                        <div class="table-button-wrap">
+                                            <button class="btn-table-blue preview">미리보기</button>
+                                            <button class="btn-table-blue">업로드</button>
+                                        </div>
+                                    </td>
+                                    <td>직군1</td>
+                                    <td>직무1</td>
+                                    <td>서울병원</td>
+                                    <td>010-123-1234</td>
+                                    <td>test@test.com</td>
+                                    <td>2022-08-01</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="table-bottom-wrap">
+                            <div class="page-entries">
+                                Showing <span>1</span> to <span>10</span> of <span>50</span> entries
+                            </div>
+                            <div class="pagination-wrapper">
+                                <div class="input-step">
+                                    <label for="">Display</label>
+                                    <input type="number" name="" id="">
+                                    <div class="btn-step-wrap">
+                                        <button class="btn-step-up"></button>
+                                        <button class="btn-step-down"></button>
+                                    </div>
+                                </div>
+                                <ul class="pagination">
+                                    <button class="btn-prev"></button>
+                                    <li class="active">1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <button class="btn-next"></button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="table-top">
+                        <p class="content-title">계약 등록</p>
+                        <div class="table-button-wrap">
+                            <button class="btn-gray">신규</button>
+                            <button class="btn-gray">저장</button>
+                            <button class="btn-gray">삭제</button>
+                        </div>
+                    </div>
+                    <div class="setting-table">
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">사번</label>
+                                <input type="text" name="" id="" value="SCH0001" class="width-414">
+                            </div>
+                            <div class="row-cont flex-end">
+                                <button class="btn-green"><span class="ic-search"></span>조회</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">기관</label>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </div>
+                            <div class="row-cont">
+                                <label for="">계약유형</label>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </div>
+                            <div class="row-cont">
+                                <label for="">성명</label>
+                                <input type="text" name="" id="" placeholder="입력">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">생년월일</label>
+                                <input type="text" name="" id="" placeholder="입력">
+                            </div>
+                            <div class="row-cont">
+                                <label for="">직군</label>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </div>
+                            <div class="row-cont">
+                                <label for="">직무</label>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">근무장소</label>
+                                <div class="button-select">
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                    </select>
+                                    <button class="btn-green place-search">찾기</button>
+                                </div>
+                            </div>
+                            <div class="row-cont">
+                                <label for="">전화번호</label>
+                                <input type="text" name="" id="" placeholder="입력">
+                            </div>
+                            <div class="row-cont">
+                                <label for="">이메일</label>
+                                <input type="text" name="" id="" placeholder="입력">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">계약시작일</label>
+                                <input type="text" name="" id="" placeholder="입력">
+                            </div>
+                            <div class="row-cont">
+                                <label for="">계약종료일</label>
+                                <input type="text" name="" id="" placeholder="입력">
+                            </div>
+                            <div class="row-cont">
+                                <label for="">관리번호</label>
+                                <input type="text" name="" id="" placeholder="입력">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-cont">
+                                <label for="">계약서첨부</label>
+                                <input type="text" name="" id="" value="C:\temp\test.pdf">
+                            </div>
+                            <div class="row-cont fit-content">
+                                <button class="btn-gray">업로드</button>
+                                <button class="btn-gray">다운로드</button>
+                                <button class="btn-gray">삭제</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal modal-appoint-info">
+        <div class="modal-cont">
+            <div class="modal-top">
+                <p class="modal-title">발령 정보</p>
+                <button class="btn-close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-table">
+                    <div class="row">
+                        <div class="row-cont">
+                            <label for="">기관</label>
+                            <select name="" id="">
+                                <option value="">서울병원</option>
+                            </select>
+                        </div>
+                        <div class="row-cont">
+                            <label for="">발령일자</label>
+                            <div class="date-wrap">
+                                <input type="date" name="" id="">
+                                ~
+                                <input type="date" name="" id="">
+                            </div>
+                        </div>
+                        <div class="row-cont">
+                            <label for="">발령유형</label>
+                            <select name="" id="">
+                                <option value="">선택</option>
+                            </select>
+                        </div>
+                        <div class="row-cont fit-content">
+                            <button class="btn-green"><span class="ic-search"></span>조회</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-wrapper check-table">
+                    <table>
+                        <colgroup>
+                        </colgroup>
+                        <tr>
+                            <th><input type="checkbox" name="" id=""></th>
+                            <th>발행일자</th>
+                            <th>사번</th>
+                            <th>성명</th>
+                            <th>생년월일</th>
+                            <th>직군</th>
+                            <th>직무</th>
+                            <th>전화번호</th>
+                            <th>이메일</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2022-12-31</td>
+                            <td>123456789</td>
+                            <td>홍길동</td>
+                            <td>1999-12-20</td>
+                            <td>전공의</td>
+                            <td>의사</td>
+                            <td>010-1234-5678</td>
+                            <td>hong77@test.com</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2022-12-31</td>
+                            <td>123456789</td>
+                            <td>홍길동</td>
+                            <td>1999-12-20</td>
+                            <td>전공의</td>
+                            <td>의사</td>
+                            <td>010-1234-5678</td>
+                            <td>hong77@test.com</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2022-12-31</td>
+                            <td>123456789</td>
+                            <td>홍길동</td>
+                            <td>1999-12-20</td>
+                            <td>전공의</td>
+                            <td>의사</td>
+                            <td>010-1234-5678</td>
+                            <td>hong77@test.com</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2022-12-31</td>
+                            <td>123456789</td>
+                            <td>홍길동</td>
+                            <td>1999-12-20</td>
+                            <td>전공의</td>
+                            <td>의사</td>
+                            <td>010-1234-5678</td>
+                            <td>hong77@test.com</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2022-12-31</td>
+                            <td>123456789</td>
+                            <td>홍길동</td>
+                            <td>1999-12-20</td>
+                            <td>전공의</td>
+                            <td>의사</td>
+                            <td>010-1234-5678</td>
+                            <td>hong77@test.com</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2022-12-31</td>
+                            <td>123456789</td>
+                            <td>홍길동</td>
+                            <td>1999-12-20</td>
+                            <td>전공의</td>
+                            <td>의사</td>
+                            <td>010-1234-5678</td>
+                            <td>hong77@test.com</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2022-12-31</td>
+                            <td>123456789</td>
+                            <td>홍길동</td>
+                            <td>1999-12-20</td>
+                            <td>전공의</td>
+                            <td>의사</td>
+                            <td>010-1234-5678</td>
+                            <td>hong77@test.com</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2022-12-31</td>
+                            <td>123456789</td>
+                            <td>홍길동</td>
+                            <td>1999-12-20</td>
+                            <td>전공의</td>
+                            <td>의사</td>
+                            <td>010-1234-5678</td>
+                            <td>hong77@test.com</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2022-12-31</td>
+                            <td>123456789</td>
+                            <td>홍길동</td>
+                            <td>1999-12-20</td>
+                            <td>전공의</td>
+                            <td>의사</td>
+                            <td>010-1234-5678</td>
+                            <td>hong77@test.com</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2022-12-31</td>
+                            <td>123456789</td>
+                            <td>홍길동</td>
+                            <td>1999-12-20</td>
+                            <td>전공의</td>
+                            <td>의사</td>
+                            <td>010-1234-5678</td>
+                            <td>hong77@test.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <button class="btn-green"><span class="ic-apply"></span>적용</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-contract-preview">
+        <div class="modal-cont">
+            <div class="modal-top">
+                <p class="modal-title">홍길동 계약서 미리보기</p>
+                <button class="btn-close"></button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-bottom">
+                <button class="btn-green"><span class="ic-print"></span>인쇄</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-work-place">
+        <div class="modal-cont">
+            <div class="modal-top">
+                <p class="modal-title">근무 장소</p>
+                <button class="btn-close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-table">
+                    <div class="row">
+                        <div class="row-cont">
+                            <label for="">기관</label>
+                            <select name="" id="">
+                                <option value="">서울병원</option>
+                            </select>
+                        </div>
+                        <div class="row-cont">
+                            <label for="">부서명</label>
+                            <input type="text" name="" id="" placeholder="입력">
+                        </div>
+                        <div class="row-cont fit-content">
+                            <button class="btn-green"><span class="ic-search"></span>조회</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-wrapper check-table">
+                    <table>
+                        <colgroup>
+                        </colgroup>
+                        <tr>
+                            <th><input type="checkbox" name="" id=""></th>
+                            <th>부서코드</th>
+                            <th>부서명</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                            <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>A010</td>
+                            <td>분만실</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <button class="btn-green"><span class="ic-apply"></span>적용</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/script.js"></script>
+    <script>
+
+        $('.btn-lookup').on('click', function () {
+            $('.modal-appoint-info').show();
+        });
+
+        $('.preview').on('click', function () {
+            $('.modal-contract-preview').show();
+        });
+
+        $('.place-search').on('click', function () {
+            $('.modal-work-place').show();
+        })
+      
+    </script>
+
+</body>
+
+</html>

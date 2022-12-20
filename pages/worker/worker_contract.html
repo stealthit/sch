@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>근로 계약</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-left">
+                <div class="main-logo"></div>
+                <div class="location">
+                    <div><span class="ic-home"></span></div>
+                    <div>전자계약</div>
+                    <div>근로 계약</div>
+                </div>
+            </div>
+            <div class="myinfo-wrap">
+                <div class="info-picture"></div>
+                <div class="info-name">김희선 <button class="btn-down"></button></div>
+                <ul class="profile-box">
+                    <li><span class="ic-mypage"></span>마이페이지</li>
+                    <li><span class="ic-logout"></span>로그아웃</li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <aside class="aside">
+                <nav class="nav">
+                    <ul class="main-menu">
+                        <li><a href="worker_ctr_check.html"><span class="ic-menu01"></span>근로
+                                계약조회</a></li>
+                        <li class="active"><a href="worker_contract.html"><span class="ic-menu02"></span>근로 계약</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="main">
+                <section class="card">
+                    <p class="content-title">근로 계약</p>
+                    <div class="work-contract-wrap">
+                        <div class="contract-top">
+                            <p class="contract-title">홍길동 계약서</p>
+                            <button class="btn-close"></button>
+                        </div>
+                        <div class="contract-body"></div>
+                        <div class="contract-bottom">
+                            <button class="btn-green"><span class="ic-print"></span>인쇄</button>
+                        </div>
+                    </div>
+                    <div class="button-wrap">
+                        <button class="btn-gray">거절하기</button>
+                        <button class="btn-gray">입력하기</button>
+                    </div>
+                    <!-- 서명 후 버튼 입니다. -->
+                    <!-- <div class="button-wrap">
+                        <button class="btn-gray">다시 입력하기</button>
+                        <button class="btn-gray">동의 서명</button>
+                    </div> -->
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <!-- 내 사인 만들기 -->
+    <div class="modal modal-sign">
+        <div class="modal-cont">
+            <div class="modal-top">
+                <p class="modal-title">내 사인 만들기</p>
+                <button class="btn-close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="sign-pad">네모 위에 사인을 그려주세요.</div>
+            </div>
+            <div class="modal-bottom">
+                <button class="btn-gray">모두 지우기</button>
+                <button class="btn-green" disabled>입력</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 전자서명에 대한 동의 -->
+    <div class="modal modal-sign-agree">
+        <div class="modal-cont">
+            <div class="modal-top">
+                <p class="modal-title">전자서명에 대한 동의</p>
+                <button class="btn-close"></button>
+            </div>
+            <div class="modal-body">
+                <span class="ic-sign-agree"></span>
+                <div class="agree-checkbox">
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="" id="check1" class="check">
+                            <label for="check1">전자서명 및 전자문서의 법적 효력에 대해 동의합니다.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="check2" class="check">
+                            <label for="check2">서명 완료 후 전송되는 전자문서를 원본으로 인정합니다.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="check3" class="check">
+                            <label for="check3">모든 서명 참여자가 전자서명에 정당한 권한을 가지는 것을 확인했습니다.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="check4" class="check">
+                            <label for="check4">기타 자세한 내용은 전자서명 이용약관에 따라 동의합니다.</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <button class="btn-gray">취소</button>
+                <button class="btn-green">동의하고 서명 완료</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/script.js"></script>
+    <script>
+     
+
+
+    </script>
+
+</body>
+
+</html>
